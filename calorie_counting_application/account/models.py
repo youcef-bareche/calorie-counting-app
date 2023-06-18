@@ -13,5 +13,4 @@ GENDER_CHOICES = [
 class CustomUser(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     birth_date = models.DateField()
-    gender = models.CharField(max_length=1, choices=GENDER_CHOICES)
-    
+    gender = models.CharField(max_length=1, choices=GENDER_CHOICES)  
